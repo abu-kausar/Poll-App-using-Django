@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card text-center">
+    <div class="card-body">
+        <h2 class="text-center">Election Polls</h2>
+    <p>
+        Polls marked with an asterisk are partisan polls.
+        Partisanship is determined by who sponsors the poll, rather than who conducts it.
+        Polls are considered partisan if they’re conducted on behalf of a candidate, party, campaign committee, or PAC, super PAC, 501(c)(4), 501(c)(5) or 501(c)(6) organization that conducts a large majority of its political activity on behalf of one political party.
+    </p>
+    <a href="{% url 'polls:index' %}" class="btn btn-dark">
+        View Available Polls
+    </a>
+
+    </div>
+    </div>
+
+{% endblock %}
